@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/main.css"/>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/popup.js"></script>
+  </head>
+  <body>
+    <div id="current"></div>
+    <div>
+      <span class="controls" id="prev"><img src="../img/prev.png"></img></span>
+      <span class="controls" id="toggle"><img src="../img/pause.png"></img></span>
+      <span class="controls" id="next"><img src="../img/next.png"></img></span>
+    </div>
+  
+    <div>
+      <input type="range" step="5" min="0" max="100" id="volume" value="0"/>
+    </div>
+  
+    <!-- Button -->
+    <div id="addToQueue">
+      <button id="addToQueue">Ind Q damit</button>
+    </div>
+  
+    <!-- This is to display errors -->
+    <div id="status"></div>
+  
+    <!-- Wait, am I configured? -->
+    <div style="margin-top: 25px; margin-bottom: 25px;">
+      <img id="btn-options" width="25" height="25" style="cursor: pointer;" title="Einstellungen" src="../img/settings.png"></img>
+      <span id="notconfigured"><- Bitte konfigurieren</span>
+    </div>
+  
+    <!-- PLAYER MODES -->
+    <div id="modes">
+      <span class="modes" id="single"><img src="../img/repeat_single.png" width="25" height="25"></img></span>
+      <span class="modes" id="repeat"><img src="../img/repeat_all.png" width="25" height="25"></img></span>
+      <span class="modes" id="random"><img src="../img/repeat_random.png" width="25" height="25"></img></span>
+    </div>
+  
+    <!-- VERSION -->
+    <div id="version">Webroida v2.0</div>
+  </body>
+</html>
