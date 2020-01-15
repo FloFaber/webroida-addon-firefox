@@ -131,7 +131,7 @@ $(document).ready(function(){
       }else{
         //plugin is not configured
         $("span#notconfigured").html("<- Bitte konfigurieren");
-        $("span#notconfigured").show();
+        $("span#notconfigured").css("display", "flex");
       }
   });
 
@@ -151,7 +151,7 @@ function update(){
           var x = r.stats.current.replace(".mp3", "");
           var a = "<a class='nostyle' href='https://www.youtube.com/watch?v="+x+"'>"+r.stats.playing.current+"</a>";
         }else{
-          var a = r.stats.playing.current;
+          var a = r.stats.current;
         }
         $("div#current").html(a);
         $("div#current").attr("title", r.stats.playing.current);
