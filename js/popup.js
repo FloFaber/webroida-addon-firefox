@@ -130,7 +130,6 @@ $(document).ready(function(){
         });
       }else{
         //plugin is not configured
-        $("span#notconfigured").html("<- Bitte konfigurieren");
         $("span#notconfigured").css("display", "flex");
       }
   });

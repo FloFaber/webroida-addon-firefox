@@ -1,6 +1,6 @@
 {
   "name": "Webroida",
-  "version": "2.0",
+  "version": "2.0.1",
   "description": "Firefox extension for Webroida",
   "permissions": ["storage", "cookies", "tabs", "http://*/*", "https://*/*", "contextMenus"],
   "background": {
